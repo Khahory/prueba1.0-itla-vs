@@ -1,0 +1,134 @@
+﻿@model IEnumerable<prueba1._0.Models.Planificacion>
+
+@{
+    ViewBag.Title = "Inicio";
+}
+
+<h2 >Inicio</h2>
+
+<p class="btn btn-outline-primary">
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+
+@foreach (var item in Model)
+{
+    <div class="jumbotron">
+        <p class="text-right">ID del documento: @Html.DisplayFor(modelItem => item.id)</p>
+
+        <div class="container">
+
+            <fieldset class="border p-2 rounded">
+                <legend class="w-auto" >
+                    datos
+                </legend>
+
+
+                    <div class="form-check">
+                        <label class="form-check-label">@Html.DisplayNameFor(model => model.grado): </label> <br />
+                        <text>@Html.DisplayFor(modelItem => item.grado)</text>
+                    </div>
+                    <br /><br />
+                    <div class="row">
+                        <div class="col-6 col-md-4">
+                            <label>@Html.DisplayNameFor(model => model.año): </label> <br />
+                            <text>@Html.DisplayFor(modelItem => item.año)</text>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <label>@Html.DisplayNameFor(model => model.mes): </label> <br />
+                            <text>@Html.DisplayFor(modelItem => item.mes)</text>
+                        </div>
+                        <div class="col-6 col-md-4" style="overflow-wrap:break-word">
+                            <label>@Html.DisplayNameFor(model => model.tiempo): </label> <br />
+                            <text>@Html.DisplayFor(modelItem => item.tiempo)</text>
+                        </div>
+
+                    </div>
+                
+            </fieldset>
+            <br /><br />
+            <div style="overflow-wrap:break-word">
+                <label>@Html.DisplayNameFor(model => model.Situacion_aprendizaje): </label> <br />
+                <text>@Html.DisplayFor(modelItem => item.Situacion_aprendizaje)</text>
+            </div>
+            <br />
+            <br />
+            <div style="overflow-wrap:break-word">
+                <label>@Html.DisplayNameFor(model => model.competencias_fundamentales): </label> <br />
+                <text>@Html.DisplayFor(modelItem => item.competencias_fundamentales)</text>
+            </div>
+            <br />
+            <br />
+            <div style="overflow-wrap:break-word">
+                <label>@Html.DisplayNameFor(model => model.areas_curriculares): </label> <br />
+                <text>@Html.DisplayFor(modelItem => item.areas_curriculares)</text>
+            </div>
+            <br />
+            <br />
+            <div style="overflow-wrap:break-word">
+                <label>@Html.DisplayNameFor(model => model.estrategia_enzeñanza_aprendizaje): </label> <br />
+                <text>@Html.DisplayFor(modelItem => item.estrategia_enzeñanza_aprendizaje)</text>
+            </div>
+            <br />
+            <br />
+            <div style="overflow-wrap:break-word">
+                <label>@Html.DisplayNameFor(model => model.competencias_especificas): </label> <br />
+                <text>@Html.DisplayFor(modelItem => item.competencias_especificas)</text>
+            </div>
+            <br />
+            <br />
+            <div style="overflow-wrap:break-word">
+                <label>@Html.DisplayNameFor(model => model.comprension_escrita): </label> <br />
+                <text>@Html.DisplayFor(modelItem => item.comprension_escrita)</text>
+            </div>
+            <br />
+            <br />
+            <div style="overflow-wrap:break-word">
+                <label>@Html.DisplayNameFor(model => model.contenido_conceptual): </label> <br />
+                <text>@Html.DisplayFor(modelItem => item.contenido_conceptual)</text>
+            </div>
+            <br />
+            <br />
+            <div style="overflow-wrap:break-word">
+                <label>@Html.DisplayNameFor(model => model.contenido_procedimental): </label> <br />
+                <text>@Html.DisplayFor(modelItem => item.contenido_procedimental)</text>
+            </div>
+            <br />
+            <br />
+            <div style="overflow-wrap:break-word">
+                <label>@Html.DisplayNameFor(model => model.contenido_actitudinal): </label> <br />
+                <text>@Html.DisplayFor(modelItem => item.contenido_actitudinal)</text>
+            </div>
+            <br />
+            <br />
+            <div style="overflow-wrap:break-word">
+                <label>@Html.DisplayNameFor(model => model.actividades): </label> <br />
+                <text>@Html.DisplayFor(modelItem => item.actividades)</text>
+            </div>
+            <br />
+            <br />
+            <div style="overflow-wrap:break-word">
+                <label>@Html.DisplayNameFor(model => model.indicadores_logro): </label> <br />
+                <text>@Html.DisplayFor(modelItem => item.indicadores_logro)</text>
+            </div>
+            <br />
+            <br />
+            <div style="overflow-wrap:break-word">
+                <label>@Html.DisplayNameFor(model => model.recursos): </label> <br />
+                <text>@Html.DisplayFor(modelItem => item.recursos)</text>
+            </div>
+            <br />
+            <br />
+            <div style="overflow-wrap:break-word">
+                <label>@Html.DisplayNameFor(model => model.evaluacion): </label> <br />
+                <text>@Html.DisplayFor(modelItem => item.evaluacion)</text>
+            </div>
+
+        </div>
+    </div>
+
+
+}
+
+
+
